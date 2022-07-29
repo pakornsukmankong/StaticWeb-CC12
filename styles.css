@@ -1,0 +1,264 @@
+/* global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+/* navbar */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo img{
+  width: 250px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login a {
+  text-decoration: none;
+  color: black;
+}
+
+.login .fa-magnifying-glass {
+  color: gray;
+}
+
+.login .fa-cart-shopping {
+  color: gray;
+}
+
+.login .noti {
+  text-align: center;
+  color: white;
+  position: absolute;
+  background-color: red;
+  border-radius: 40px;
+  width: 10px;
+  height: 10px;
+  font-size: 8px;
+  right: 245px;
+  top: 10px;
+}
+
+/* main content */
+.my-cart-text {
+  width: 100%;
+  color:  black;
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* card list */
+
+.card-box {
+  background-color: white;
+  width: 450px;
+  height: 180px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.square-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: rgb(23, 136, 229);
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.square-box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: salmon;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.square-box,.square-box-2 h4 {
+  color: whitesmoke;
+}
+
+.square-box,.square-box-2 p {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.fa-newspaper {
+  color: rgb(23, 136, 229);
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.square-box-2 .fa-newspaper {
+  color: salmon;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.item-name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-name h4 {
+  color: gray;
+}
+
+.trash-img {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(9, 216, 172);
+  border-radius: 100%;
+}
+.fa-trash {
+  margin-top: 3px;
+  margin-left: 4px;
+  color: rgb(9, 216, 172);
+}
+
+.fa-circle {
+  color: rgb(9, 216, 172);
+}
+
+/* order info */
+.order-info-container {
+  background-color: white;
+  border-radius: 20px;
+  width: 450px;
+  height: 230px;
+  margin-top: 10px;
+}
+
+.order-info {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.subtotal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin-top: 10px;
+}
+
+.promotion-code {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+.promotion-code input {
+  width: 65%;
+  height: 25px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.promotion-code button {
+  width: 25%;
+  background-color: white;
+  border: 1px solid rgb(9, 216, 172);
+  color: rgb(9, 216, 172) ;
+  border-radius: 5px;
+}
+
+.fa-ticket {
+  color: rgb(9, 216, 172);
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.total-payment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gainsboro;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 10px;
+}
+
+.total-payment h1 {
+  color: rgb(9, 216, 172);
+}
+
+.checkout {
+  width: 100%;
+  margin-top: 10px;
+}
+.checkout button {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(9, 216, 172);
+  border-radius: 5px;
+  border: 1px solid rgb(9, 216, 172);
+}
+
+.checkout button:hover {
+	background-color:lightgreen;
+  border: 1px solid lightgreen;
+}
+.checkout button:active {
+	position:relative;
+	top:1px;
+}
+
